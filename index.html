@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Student Dashboard</h1>
+            <!-- TODO: add a login/logout section here -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Login form (shown when not logged in) -->
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <!-- TODO: add username and password inputs + submit button -->
+            </form>
+        </section>
+
+        <!-- Dashboard (shown after login) -->
+        <section id="dashboard" class="hidden">
+            <h2>Students</h2>
+
+            <!-- TODO: add a form to create a new student -->
+
+            <!-- Student list (populated by JavaScript) -->
+            <div id="student-list" class="card-grid">
+                <!-- Cards will be added here by app.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Platform</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

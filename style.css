@@ -1,0 +1,42 @@
+/* ═══ Reset ═══ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ═══ Base ═══ */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ═══ Header & Nav ═══ */
+/* TODO: style the header and nav using flexbox */
+
+/* ═══ Main Content ═══ */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* ═══ Cards ═══ */
+/* TODO: style the card class (background, padding, border-radius, shadow) */
+
+/* ═══ Card Grid ═══ */
+/* TODO: make .card-grid a flex container with wrapping and gap */
+
+/* ═══ Forms ═══ */
+/* TODO: style form inputs, labels, and buttons */
+
+/* ═══ Hidden class ═══ */
+.hidden {
+    display: none;
+}
+
+/* ═══ Responsive ═══ */
+/* TODO: add a media query for screens smaller than 768px */
+/* Make the card grid stack vertically on mobile */
