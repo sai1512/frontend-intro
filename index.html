@@ -11,6 +11,8 @@
         <nav>
             <h1>Student Dashboard</h1>
             <!-- TODO: add a login/logout section here -->
+            <div id="auth-section"></div>
+
         </nav>
     </header>
 
@@ -20,19 +22,60 @@
             <h2>Login</h2>
             <form id="login-form">
                 <!-- TODO: add username and password inputs + submit button -->
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
             </form>
         </section>
 
         <!-- Dashboard (shown after login) -->
         <section id="dashboard" class="hidden">
-            <h2>Students</h2>
-
-            <!-- TODO: add a form to create a new student -->
-
-            <!-- Student list (populated by JavaScript) -->
-            <div id="student-list" class="card-grid">
-                <!-- Cards will be added here by app.js -->
+            <div class="dashboard-tabs">
+                <button type="button" class="tab-button active" data-tab="students-panel">Student Cards</button>
+                <button type="button" class="tab-button" data-tab="create-panel">Create Student</button>
             </div>
+
+            <div id="students-panel" class="tab-panel active">
+                <h2>Students</h2>
+                <input type="text" id="student-search" placeholder="Search by name or email...">
+                <p id="student-count-message"></p>
+                <div id="student-list" class="card-grid">
+                    <!-- Cards will be added here by app.js -->
+                </div>
+            </div>
+
+            <div id="create-panel" class="tab-panel hidden">
+                <h2>Create New Student</h2>
+                <form id="create-student-form">
+                    <div>
+                        <label for="student-name">Name:</label>
+                        <input type="text" id="student-name" name="student-name" required>
+                    </div>
+                    <div>
+                        <label for="student-email">Email:</label>
+                        <input type="email" id="student-email" name="student-email" required>
+                    </div>
+                    <div>
+                        <label for="student-grade">Grade:</label>
+                        <input type="text" id="student-grade" name="student-grade" maxlength="2" required>
+                    </div>
+                    <div>
+                        <label for="student-course">Course:</label>
+                        <select id="student-course" name="student-course" required>
+                            <option value="">Select a course</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Create Student</button>
+                </form>
+            </div>
+
         </section>
     </main>
 
